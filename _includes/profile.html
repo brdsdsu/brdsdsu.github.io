@@ -1,0 +1,122 @@
+<div class="profile-container">
+	<div class="profile-row">
+		<div class="profile-image-container">
+			{% if page.headshot %}
+			<img src="{{ page.headshot | relative_url }}" alt="Profile Photo" class="headshot">
+			{% else %}
+			<img src="{{ '/assets/images/default-headshot.jpg' | relative_url }}" alt="Default Profile Photo"
+				class="headshot">
+			{% endif %}
+		</div>
+		<div class="profile-content">
+			<div>
+				<h1 class="profile-name">{{ page.name }}</h1>
+				<div class="profile-bio">
+					{{ page.bio }}
+				</div>
+			</div>
+			{% if page.social_links %}
+			<div class="profile-social">
+				{% for link in page.social_links %}
+				<a href="{{ link.url }}" style="font-size: 1.2em;"><i class="{{ link.icon }}"></i> {{ link.title }}</a>
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+<style>
+	.profile-container {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	.profile-row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.profile-image-container {
+		flex: 0 0 150px;
+		max-width: 300px;
+		margin-right: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.profile-image {
+		flex: 0 0 150px;
+	}
+
+	.profile-image img.headshot {
+		/* width: 100%; */
+		border-radius: 0%;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.profile-content {
+		flex: 1;
+		min-width: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 8px 0 8px 0;
+		padding-left: 0px;
+	}
+
+	.profile-name {
+		margin: 0 0 10px 0;
+		font-size: 1.0em;
+	}
+
+	.profile-bio {
+		margin-bottom: 10px;
+		line-height: 1.6;
+		font-size: 0.9em;
+		/* Reduced font size for bio for better hierarchy */
+		color: #333;
+		/* Restored color for bio for contrast */
+	}
+
+	.profile-social a {
+		margin-right: 15px;
+		font-size: 0.8em;
+		color: #333;
+	}
+
+	.profile-social a:hover {
+		color: #007BFF;
+		/* Added hover effect for better interaction */
+	}
+
+	@media (max-width: 768px) {
+		.profile-name {
+			margin: 10px 0 10px 0;
+			font-size: 1.5em;
+		}
+
+		.profile-bio {
+			margin-bottom: 15px;
+			line-height: 1.6;
+			font-size: 1.2em;
+			color: #333;
+		}
+
+		.profile-row {
+			flex-direction: column;
+			text-align: center;
+			align-content: center;
+			justify-content: center;
+		}
+
+		.profile-image-container {
+			margin-right: 0;
+			max-width: 300px;
+		}
+	}
+</style>

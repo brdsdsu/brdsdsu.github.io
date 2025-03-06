@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<h2>Principle Investigator</h2>
+
+{% assign PI = site.people | where: "role", "Principle Investigator" %}
+{% for person in PI %}
+	{{ person }}
+{% endfor %}
+
+{% assign GS = site.people | where: "role", "Graduate Student" %}
+{% if GS.size > 0 %}
+	<h2>Graduate Students</h2>
+	{% for person in GS %}
+		{{ person }}
+	{% endfor %}
+{% endif %}
+
+{% assign UG = site.people | where: "role", "Undergraduate Student" %}
+{% if UG.size > 0 %}
+	<h2>Undergraduate Students</h2>
+	{% for person in UG %}
+		{{ person }}
+	{% endfor %}
+{% endif %}
+
+{% assign alumni = site.people | where: "role", "Alumni" %}
+{% if alumni.size > 0 %}
+	<h2>Alumni</h2>
+	{% for person in alumni %}
+		{{ person }}
+	{% endfor %}
+{% endif %}
+
+{% assign visitors = site.people | where: "role", "Visitor" %}
+{% if visitors.size > 0 %}
+	<h2>Visitors</h2>
+	{% for person in visitors %}
+		{{ person }}
+	{% endfor %}
+{% endif %}

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1>Research</h1>
+<hr>
+<!-- TODO: Add content description or purpose of the research section -->
+<div class="posts">
+	{% for research in site.researchs %}
+	  <article class="post">
+  
+		  <h2><a href="{{ site.baseurl }}{{ research.url }}">{{ research.date | date: "%Y" }} - {{ research.title }}</a></h2>
+  
+		<div class="entry">
+		  {{ research.excerpt }}
+		</div>
+  
+		<a href="{{ site.baseurl }}{{ research.url }}" class="read-more">Read More</a>
+	  </article>
+	{% endfor %}
+</div>

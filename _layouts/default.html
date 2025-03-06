@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <!-- <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title> -->
 
     {% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <!-- IconFont -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- Latex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -16,6 +25,7 @@
   </head>
 
   <body>
+    
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -27,8 +37,11 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/">Home</a>
+            <a href="{{ site.baseurl }}/research">Research</a>
+            <a href="{{ site.baseurl }}/people">People</a>
+            <a href="{{ site.baseurl }}/publications">Publications</a>
+            <a href="{{ site.baseurl }}/contact">Contact</a>
           </nav>
         </header>
       </div>

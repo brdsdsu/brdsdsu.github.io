@@ -1,5 +1,5 @@
 
-.highlight {
+pre.highlight {
   background-color: #efefef;
   padding: 7px 7px 7px 10px;
   border: 1px solid #ddd;
@@ -12,6 +12,10 @@
 
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  font-size: 15px;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
