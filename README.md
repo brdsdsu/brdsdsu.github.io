@@ -54,7 +54,7 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 2. Install Ruby `sudo apt install ruby-dev`
 3. Install bundler `gem install bundler`
 4. Install dependenceis `bundler install`
-3. Serve the site and watch for markup/sass changes `bundle exec jekyll serve`
+3. Serve the site and watch for markup/sass changes `bundle exec jekyll serve --incremental --livereload`
 4. View your website at http://127.0.0.1:4000/
 5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
 
