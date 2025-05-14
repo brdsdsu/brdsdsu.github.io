@@ -1,20 +1,14 @@
 ---
-name: Felix Gr&ouml;te
+name: Felix Grote
 role: Visitor
-headshot: /images/avatar.png
+headshot: /images/felix-grote.jpeg
 social_links:
   - url: fgrote@sdsu.edu
     name: Mail
     icon: fa-solid fa-envelope
-  - url: 
-    name: GitHub
-    icon: fa-brands fa-github
-  - url: 
+  - url: https://www.linkedin.com/in/felix-grote-03798016b
     name: linkedin
     icon: fa-brands fa-linkedin
-  - url: 
-    name: Google Scholar
-    icon: fa-solid fa-graduation-cap
 bio: Visiting MS thesis student from University of the Bundeswehr Munich.
 ---
 
