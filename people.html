@@ -25,18 +25,18 @@ layout: default
 	{% endfor %}
 {% endif %}
 
-{% assign alumni = site.people | where: "role", "Alumni" %}
-{% if alumni.size > 0 %}
-	<h2>Alumni</h2>
-	{% for person in alumni %}
-		{{ person }}
-	{% endfor %}
-{% endif %}
-
 {% assign visitors = site.people | where: "role", "Visitor" %}
 {% if visitors.size > 0 %}
 	<h2>Visitors</h2>
 	{% for person in visitors %}
+		{{ person }}
+	{% endfor %}
+{% endif %}
+
+{% assign alumni = site.people | where: "role", "Alumni" %}
+{% if alumni.size > 0 %}
+	<h2>Former</h2>
+	{% for person in alumni %}
 		{{ person }}
 	{% endfor %}
 {% endif %}
