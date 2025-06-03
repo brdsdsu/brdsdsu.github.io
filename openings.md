@@ -28,4 +28,4 @@ Desired Experience/Knowledge:
 
 #### Undergraduate/Graduate Projects
 
-Ongoing projects consistently have opportunities for undergraduate (or graduate) student contributions. See our research page and recent publications for general topics (autonomous cyber-physical systems, intelligent edge systems, etc.). Essential skills include proficiency in Python, C++, and Linux commandline interface. Contact me if interested.
+Ongoing projects consistently have opportunities for undergraduate (or graduate) student contributions. See our research page and recent publications for general topics (autonomous cyber-physical systems, intelligent edge systems, etc.). Essential skills include proficiency in Python, C++, and Linux commandline interface. <a href="mailto:bdonyanavard@sdsu.edu">Contact Prof. Donyanavard</a> if interested.
