@@ -1,6 +1,7 @@
 ---
 name: Alles Rebel
 role: Graduate Student
+year: 2023
 headshot: /images/rebel-profile.jpg
 social_links:
   - url: mailto:arebel4097@sdsu.edu

@@ -1,6 +1,7 @@
 ---
 name: Jacqueline Auner
 role: Visitor
+year: 2025
 headshot: /images/avatar.png
 social_links:
   - url: jauner@sdsu.edu

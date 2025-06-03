@@ -1,6 +1,7 @@
 ---
-name: Changhoon (Charlie) Sung
+name: Changhoon Sung
 role: Graduate Student
+year: 2024
 headshot: /images/charlie-profile.jpeg
 social_links:
   - url: mailto:csung7167@sdsu.edu

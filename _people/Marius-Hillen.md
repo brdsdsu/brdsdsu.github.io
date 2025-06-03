@@ -1,6 +1,7 @@
 ---
 name: Marius Hillen
 role: Alumni
+year: 0
 headshot: /images/avatar.png
 social_links:
   - url: mhillen@sdsu.edu

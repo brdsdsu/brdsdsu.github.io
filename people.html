@@ -9,34 +9,42 @@ layout: default
 	{{ person }}
 {% endfor %}
 
-{% assign GS = site.people | where: "role", "Graduate Student" %}
+{% assign GS = site.people | where: "role", "Graduate Student" | group_by: "year" | sort: "name" %}
 {% if GS.size > 0 %}
 	<h2>Graduate Students</h2>
-	{% for person in GS %}
-		{{ person }}
+	{% for group in GS %}
+		{% for person in group.items %}
+			{{ person }}
+		{% endfor %}
 	{% endfor %}
 {% endif %}
 
-{% assign UG = site.people | where: "role", "Undergraduate Student" %}
+{% assign UG = site.people | where: "role", "Undergraduate Student" | group_by: "year" | sort: "name" %}
 {% if UG.size > 0 %}
 	<h2>Undergraduate Students</h2>
-	{% for person in UG %}
-		{{ person }}
+	{% for group in UG %}
+		{% for person in group.items %}
+			{{ person }}
+		{% endfor %}
 	{% endfor %}
 {% endif %}
 
-{% assign visitors = site.people | where: "role", "Visitor" %}
+{% assign visitors = site.people | where: "role", "Visitor" | group_by: "year" | sort: "name" | reverse %}
 {% if visitors.size > 0 %}
 	<h2>Visitors</h2>
-	{% for person in visitors %}
-		{{ person }}
+	{% for group in visitors %}
+		{% for person in group.items %}
+			{{ person }}
+		{% endfor %}
 	{% endfor %}
 {% endif %}
 
-{% assign alumni = site.people | where: "role", "Alumni" %}
+{% assign alumni = site.people | where: "role", "Alumni" | group_by: "year" | sort: "name" | reverse %}
 {% if alumni.size > 0 %}
 	<h2>Former</h2>
-	{% for person in alumni %}
-		{{ person }}
+	{% for group in alumni %}
+		{% for person in group.items %}
+			{{ person }}
+		{% endfor %}
 	{% endfor %}
 {% endif %}

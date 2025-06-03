@@ -1,6 +1,7 @@
 ---
 name: Felix Grote
 role: Visitor
+year: 2025
 headshot: /images/felix-grote.jpeg
 social_links:
   - url: fgrote@sdsu.edu

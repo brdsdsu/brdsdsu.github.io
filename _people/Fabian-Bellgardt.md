@@ -1,6 +1,7 @@
 ---
 name: Fabian Bellgardt
 role: Visitor
+year: 2025
 headshot: /images/avatar.png
 social_links:
   - url: fbellgardt@sdsu.edu
