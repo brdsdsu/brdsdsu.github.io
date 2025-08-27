@@ -23,7 +23,7 @@ We use statistical methods to identify useful patterns in the data collected to 
 Typical outcomes include predictive models of application behavior [1][2].
 
 [1] [Donyanavard et al., CODES+ISSS'16](https://dl.acm.org/doi/abs/10.1145/2968456.2968459)<br>
-[2] [Hernández et al., IROS'21](https://dl.acm.org/doi/abs/10.1145/2968456.2968459)
+[2] [Hernández et al., IROS'21](https://ieeexplore.ieee.org/abstract/document/9635978)
 
 ### Runtime Decision-making ###
 The third pillar builds on the behavioral models and analysis.
