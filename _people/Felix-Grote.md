@@ -1,6 +1,6 @@
 ---
 name: Felix Grote
-role: Visitor
+role: Alumni
 year: 2025
 headshot: /images/felix-grote.jpeg
 social_links:
@@ -10,7 +10,7 @@ social_links:
   - url: https://www.linkedin.com/in/felix-grote-03798016b
     name: linkedin
     icon: fa-brands fa-linkedin
-bio: Visiting MS thesis student from University of the Bundeswehr Munich.
+bio: Visiting MS thesis student from University of the Bundeswehr Munich.<br>"Reservoir Computing and its Implementation on an Edge Computer," 2025
 ---
 
 {% include profile.html %}
