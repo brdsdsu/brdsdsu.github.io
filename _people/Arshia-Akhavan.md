@@ -1,5 +1,5 @@
 ---
-name: Arshia Akhavan
+name: <a href="https://arshiaakhavan.me">Arshia Akhavan</a>
 role: Graduate Student
 year: 2025
 headshot: /images/arshia-profile.jpg
