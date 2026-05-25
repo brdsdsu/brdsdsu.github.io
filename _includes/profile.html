@@ -12,7 +12,7 @@
 			<div>
 				<h1 class="profile-name">{{ page.name }}</h1>
 				<div class="profile-bio">
-					{{ page.bio }}
+					{{ page.bio | markdownify }}
 				</div>
 			</div>
 			{% if page.social_links %}
