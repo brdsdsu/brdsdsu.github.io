@@ -10,7 +10,10 @@ social_links:
   - url: https://www.linkedin.com/in/changhoon-sung
     name: linkedin
     icon: fa-brands fa-linkedin
-bio: MS student @ CSIL.
+  - url: https://github.com/changhoon-sung
+    name: GitHub
+    icon: fa-brands fa-github
+bio: Joint PhD, coadvised with <a href="https://duttgroup.ics.uci.edu/group-members" target="_blank">Nikil Dutt</a> @ UCI. Affiliated with SDSU's [Computational Science Research Center](https://www.csrc.sdsu.edu/).
 ---
 
 {% include profile.html %}
