@@ -95,6 +95,10 @@
 	}
 
 	@media (max-width: 768px) {
+		.profile-container {
+			padding: 20px 0;
+		}
+
 		.profile-name {
 			margin: 10px 0 10px 0;
 			font-size: 1.5em;
@@ -110,13 +114,20 @@
 		.profile-row {
 			flex-direction: column;
 			text-align: center;
-			align-content: center;
+			align-items: center;
 			justify-content: center;
 		}
 
 		.profile-image-container {
 			margin-right: 0;
 			max-width: 300px;
+			width: 100%;
+		}
+
+		.profile-content {
+			align-items: center;
+			min-width: 0;
+			width: 100%;
 		}
 	}
 </style>
