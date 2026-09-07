@@ -7,7 +7,7 @@ social_links:
   - url: mailto:jgapuz3560@sdsu.edu
     name: Mail
     icon: fa-solid fa-envelope
-bio:
+bio: Linux Kernel Engineer @ Canonical
 ---
 
 {% include profile.html %}
