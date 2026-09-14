@@ -1,8 +1,8 @@
 ---
-name: Adam Kaauwai
+name: David A. Kaauwai
 role: Alumni
 year: 2026
-headshot: /images/avatar.png
+headshot: /images/david-profile.jpeg
 social_links:
   - url: mailto:dkaauwai0821@sdsu.edu
     name: Mail
