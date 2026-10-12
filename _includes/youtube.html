@@ -1,0 +1,9 @@
+{% comment %}
+  Lightweight YouTube embed: shows the thumbnail and only loads the player iframe on click.
+  Usage: include youtube.html id="VIDEO_ID" title="Video title"
+{% endcomment %}
+<button type="button" class="youtube-facade" aria-label="Play video: {{ include.title }}"
+  onclick="this.outerHTML='<iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/{{ include.id }}?autoplay=1&quot; title=&quot;{{ include.title | escape }}&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen></iframe>'">
+  <img src="https://i.ytimg.com/vi_webp/{{ include.id }}/hqdefault.webp" alt="" width="560" height="315" loading="lazy" decoding="async">
+  <span class="youtube-facade-play" aria-hidden="true"></span>
+</button>

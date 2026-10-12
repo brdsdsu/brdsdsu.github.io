@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!-- <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title> -->
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    {% assign favicon = '/favicon.png' | resize_image: 32, format: 'png' %}
+    {% assign touch_icon = '/favicon.png' | resize_image: 192, format: 'png' %}
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ favicon.src | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ touch_icon.src | relative_url }}">
 
-    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
 
-    <!-- IconFont -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
+    {% if page.math %}
     <!-- Latex -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"
         onload="renderMathInElement(document.body);"></script>
+    {% endif %}
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <style>{{ '@use "main";' | scssify }}</style>
+    {% for link in site.footer-links %}{% if link[1] %}{% assign footer_icons = true %}{% endif %}{% endfor %}
+    {% if footer_icons %}<link rel="stylesheet" href="{{ site.baseurl }}/footer-icons.css">{% endif %}
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
@@ -31,12 +33,15 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          {% assign logo = site.avatar | image_srcset: '280,560,840', quality: 85 %}
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ logo.src | relative_url }}" {% if logo.srcset %}srcset="{{ logo.srcset }}" sizes="280px" {% endif %}alt="{{ site.title }}" width="280" height="70"></a>
 
+          {% if site.name %}
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
+          {% endif %}
 
           <nav>
             <a href="{{ site.baseurl }}/">Home</a>

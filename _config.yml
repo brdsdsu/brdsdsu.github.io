@@ -8,8 +8,12 @@
 # Short bio or description (displayed in the header)
 # description: "San Diego State University"
 
+# Used for <title>, the feed, and the meta description (not shown in the header)
+title: Computer Systems Intelligence Lab
+meta_description: "Computer Systems Intelligence (CSI) Lab at San Diego State University."
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/csil-landscape.png
+avatar: /images/csil-landscape.png # original; resized at build time
 
 collections:
   researchs:
@@ -79,7 +83,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: compressed
 
 # Use the following plug-ins
 plugins:

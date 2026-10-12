@@ -10,7 +10,8 @@ The goal is to enable practical deployment of realtime applications requiring en
 We set out to achieve this by utilizing next-generation wireless networking to connect end-edge-cloud systems, and adding cross-layer intelligence to balance system constraints, like energy efficiency, with application requirements, like latency or safety.
 We categorize the process to conduct this research into **_three pillars_**, outlined below.
 
-### Instrumentation and Data Collection ###
+## Instrumentation and Data Collection
+{: .h3}
 The first pillar consists of instrumenting applications and systems in order to measure their behavior, collect data, and ultimately evaluate solutions.
 We achieve this by modifying existing applications or operating systems, or generating standalone applications in Python or C++.
 Typical outcomes include open-source tools [1], benchmark suites [2], or datasets.
@@ -18,7 +19,8 @@ Typical outcomes include open-source tools [1], benchmark suites [2], or dataset
 [1] [MARS framework: Middleware for Adaptive Reflective Systems](https://github.com/duttresearchgroup/MARS)<br>
 [2] [Chauffeur: Benchmark Suite for Design and End-to-End Analysis of Self-Driving Vehicles on Embedded Systems](https://github.com/duttresearchgroup/Chauffeur)
 
-### Data Analysis and Modeling ###
+## Data Analysis and Modeling
+{: .h3}
 The second pillar builds on the data collected from the instrumentations.
 We use statistical methods to identify useful patterns in the data collected to understand the relationship between inputs, application, system, and measured behavior.
 Typical outcomes include predictive models of application behavior [3][4].
@@ -26,7 +28,8 @@ Typical outcomes include predictive models of application behavior [3][4].
 [3] [Donyanavard et al., CODES+ISSS'16](https://dl.acm.org/doi/abs/10.1145/2968456.2968459)<br>
 [4] [Hernández et al., IROS'21](https://ieeexplore.ieee.org/abstract/document/9635978)
 
-### Runtime Decision-making ###
+## Runtime Decision-making
+{: .h3}
 The third pillar builds on the behavioral models and analysis.
 We define optimization problems based on application goals and system constraints, and solve them at runtime in order to operate the system and application in the most efficient and effective way, given dynamic inputs and environments.
 Typical outcomes include runtime policies for computational offloading [5] or resource sharing [6][7][8].
@@ -74,6 +77,6 @@ The architecture offers a promising solution for realtime inference in distribut
 [12] [Kauuwai et al., NICE'25]()
 
 ## Media
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iGdzzA-jpNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% include youtube.html id="iGdzzA-jpNc" title="YouTube video player" %}
 
 <!--iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iDVT4Gyp8q8" title="Fall 2022 Colloquium Talk - Bryan Donyanavard (09/09/2022)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe-->

@@ -2,7 +2,7 @@
 name: ----------------------------FILL ME-----------------------------
 role: ----------------------------FILL ME----------------------------- # see people.html
 year: ----------------------------FILL ME-----------------------------
-headshot: ----------------------------FILL ME-----------------------------
+headshot: ----------------------------FILL ME----------------------------- # e.g. /images/jane.jpg — put the original photo (jpg/png, any size) in /images; it is resized to WebP at build time
 social_links:
   - url: ----------------------------FILL ME-----------------------------
     name: Mail

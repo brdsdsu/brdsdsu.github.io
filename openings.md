@@ -26,6 +26,7 @@ Desired Experience/Knowledge:
  - __SDSU students__ interested in GPU or HDL programming for ongoing projects.
  - __SDSU students__ interested in evaluating realtime SLAM and 3D mapping applications on embedded systems.
 
-#### Undergraduate/Graduate Projects
+### Undergraduate/Graduate Projects
+{: .h4}
 
 Ongoing projects consistently have opportunities for undergraduate (or graduate) student contributions. See our research page and recent publications for general topics (autonomous cyber-physical systems, intelligent edge systems, etc.). Essential skills include proficiency in Python, C++, and Linux commandline interface. <a href="mailto:bdonyanavard@sdsu.edu">Contact Prof. Donyanavard</a> if interested.

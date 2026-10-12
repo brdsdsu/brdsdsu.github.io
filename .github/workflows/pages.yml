@@ -39,6 +39,12 @@ jobs:
           ruby-version: '4.0.7' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Install ImageMagick
+        # Used by _plugins/image_optimizer.rb to create resized images (headshots, slider, logo, favicon)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends imagemagick
+          convert -list format | grep -i webp
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v6

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Markdown Sample
+math: true
 tags: [ Autonomy, Robotics ]
 ---
 
