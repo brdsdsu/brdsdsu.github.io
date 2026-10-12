@@ -50,13 +50,36 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
 ## Local Development
 
-1. Clone the repo `git clone https://github.com/brdsdsu.github.io.git`
-2. Install Ruby `sudo apt install ruby-dev`
-3. Install bundler `gem install bundler`
-4. Install dependenceis `bundler install`
-3. Serve the site and watch for markup/sass changes `bundle exec jekyll serve --livereload`
-4. View your website at http://127.0.0.1:4000/
-5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
+1. Clone the repo and enter its directory:
+
+   ```sh
+   git clone https://github.com/brdsdsu/brdsdsu.github.io.git
+   cd brdsdsu.github.io
+   ```
+
+2. Install Ruby 4.0.7 to match CI. On macOS, use Homebrew Ruby instead of the system Ruby and ensure its `bin` directory is on your `PATH`. On Ubuntu, install Ruby with its development headers and build tools.
+3. Install the Bundler version recorded under `BUNDLED WITH` in `Gemfile.lock`, then install dependencies:
+
+   ```sh
+   gem install bundler -v 4.0.22
+   bundle install
+   ```
+
+4. Serve the site and watch for markup/Sass changes:
+
+   ```sh
+   bundle exec jekyll serve --livereload
+   ```
+
+5. View your website at http://127.0.0.1:4000/. Stop the server with Ctrl-C.
+6. Commit any changes and push to the `master` branch. The GitHub Actions workflow will build and deploy the website.
+
+If `bundle` fails with `cannot load such file .../bundler-4.0.22/exe/bundle`, the local Bundler installation is incomplete. Reinstall that version before installing dependencies:
+
+```sh
+gem install bundler -v 4.0.22 --force
+bundle install
+```
 
 ## Moar!
 
